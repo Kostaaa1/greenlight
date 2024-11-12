@@ -60,7 +60,6 @@ func (app *application) readJSON(w http.ResponseWriter, r *http.Request, dst int
 		var invalidUnmarshalError *json.InvalidUnmarshalError
 
 		switch {
-
 		// Use the errors.As() function to check whether the error has the type
 		// *json.SyntaxError. If it does, then return a plain-english error message
 		// which includes the location of the problem.
