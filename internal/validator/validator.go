@@ -31,7 +31,7 @@ func (v *Validator) Check(ok bool, key, message string) {
 	}
 }
 
-func (v *Validator) In(value string, list ...string) bool {
+func In(value string, list ...string) bool {
 	for i := range list {
 		if value == list[i] {
 			return true
